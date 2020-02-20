@@ -1,0 +1,23 @@
+{
+  "name": "oak",
+  "version": "1.0.0",
+  "description": "server side playground",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "gh-pages -d app",
+    "dev": "nodemon app",
+    "start": "node app"
+  },
+  "author": "Nikolay",
+  "license": "ISC",
+  "homepage": "https://laveosa.github.io/oak",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "gh-pages": "^2.2.0",
+    "nodemon": "^2.0.2",
+    "uuid": "^3.4.0"
+  },
+  "dependencies": {
+    "ejs": "^3.0.1"
+  }
+}
