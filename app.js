@@ -1,16 +1,29 @@
 const dotenv = require("dotenv").config();
-const uuid = require("uuid");
-const http = require("http");
+const fs = require("fs");
+const path = require("path");
 
-const PORT = process.env.PORT;
+let model = {
+  name: "Nik",
+  age: 37,
+  position: "developer"
+};
 
-const server = http
-  .createServer((req, res) => {
-    if (req.url === "/") {
-      console.log(req.params);
+model = JSON.stringify(model);
 
-      res.writeHead(200, { "Content-Type": "text/html" });
-      res.end("./app/index.html");
-    }
-  })
-  .listen(PORT);
+// fs.writeFile(
+//   path.join(__dirname, "app/server/files/users.json"),
+//   model,
+//   err => {
+//     if (err) throw err;
+//   }
+// );
+
+fs.readFile(
+  path.join(__dirname, "app/server/files/users.json"),
+  "utf-8",
+  (err, data) => {
+    if (err) throw err;
+
+    console.log(JSON.parse(data));
+  }
+);
