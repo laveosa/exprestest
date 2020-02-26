@@ -10,6 +10,11 @@ class User extends EventEmitter {
   sayHi = () => {
     console.log(`${this.name} say hi`);
   };
+  showInfo = function() {
+    console.log("name: ", this.name);
+    console.log("age: ", this.age);
+    console.log("position: ", this.position);
+  };
 }
 
 module.exports = User;
