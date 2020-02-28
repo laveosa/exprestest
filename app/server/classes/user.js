@@ -13,6 +13,12 @@ class User extends EventEmitter {
   setName = function(name) {
     this.name = name;
   };
+  setAge = function(age) {
+    this.age = age;
+  };
+  setPosition = function(position) {
+    this.position = position;
+  };
   showInfo = function() {
     console.log("name: ", this.name);
     console.log("age: ", this.age);
