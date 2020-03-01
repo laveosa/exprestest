@@ -1,0 +1,53 @@
+<div
+  class="navigation-area container d-flex justify-content-between align-items-center"
+>
+  <div class="logo-cover p-1 mr-1">
+    <a href="/">
+      <img src="/media/icons/favicon_light.png" alt="logo" />
+    </a>
+  </div>
+  <div class="navigation-cover">
+    <ul class="nav d-flex justify-content-center p-1">
+      <% if(nav.url === '/home'){%>
+      <li class="nav-items m-1">
+        <a href="/home" class="nav-link rounded active">
+          <img src="/media/icons/home_light.png" alt="home" />
+        </a>
+      </li>
+      <%} else {%>
+      <li class="nav-items m-1">
+        <a href="/home" class="nav-link rounded">
+          <img src="/media/icons/home_light.png" alt="home" />
+        </a>
+      </li>
+      <%}%> <% if(nav.url === '/file-tree'){%>
+      <li class="nav-items m-1">
+        <a href="/file-tree" class="nav-link rounded active">
+          <img src="/media/icons/file_tree_light.png" alt="file tree" />
+        </a>
+      </li>
+      <%} else {%>
+      <li class="nav-items m-1">
+        <a href="/file-tree" class="nav-link rounded">
+          <img src="/media/icons/file_tree_light.png" alt="file tree" />
+        </a>
+      </li>
+      <%}%> <% if(nav.url === '/log'){%>
+      <li class="nav-items m-1">
+        <a href="/log" class="nav-link rounded active">
+          <img src="/media/icons/math_log_light.png" alt="log" />
+        </a>
+      </li>
+      <%} else {%>
+      <li class="nav-items m-1">
+        <a href="/log" class="nav-link rounded">
+          <img src="/media/icons/math_log_light.png" alt="log" />
+        </a>
+      </li>
+      <%}%>
+    </ul>
+  </div>
+  <div class="user-cover p-1 ml-1">
+    <img src="/media/icons/user_light.png" alt="user" />
+  </div>
+</div>
