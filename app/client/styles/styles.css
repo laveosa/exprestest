@@ -1,4 +1,5 @@
 .main-wraper {
+  min-height: 100vh;
 }
 
 #HeaderContainer {

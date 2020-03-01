@@ -19,7 +19,7 @@ let model = {
 
 http
   .createServer((req, res) => {
-    myConfig.setEventListeners(req, res, file);
+    myConfig.addStaticFiles(req, res, file);
 
     if (req.url === "/") {
       res.writeHead(302, {

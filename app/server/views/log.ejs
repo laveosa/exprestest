@@ -2,14 +2,14 @@
 <html lang="en">
   <%- include('./layouts/header.ejs')%>
   <body>
-    <div class="main-wraper">
+    <div class="main-wraper d-flex justify-content-between flex-column">
       <header id="HeaderContainer" class="bg-secondary">
         <%- include('./layouts/navigation.ejs')%>
       </header>
-      <section id="ContentContainer">
+      <section id="ContentContainer" class="flex-grow-1">
         <%- include('./layouts/log-content.ejs')%>
       </section>
-      <footer id="FooterContainer">
+      <footer id="FooterContainer" class="bg-secondary">
         <%- include('./layouts/footer.ejs')%>
       </footer>
     </div>

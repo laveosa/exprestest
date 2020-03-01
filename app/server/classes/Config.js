@@ -29,7 +29,7 @@ class Config extends EventEmmiter {
 
     return contenType;
   };
-  setEventListeners = (req, res, file) => {
+  addStaticFiles = (req, res, file) => {
     req
       .addListener("end", function() {
         file.serve(req, res);
