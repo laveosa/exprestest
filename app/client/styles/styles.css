@@ -1,3 +1,30 @@
 .main-wraper {
-  border: 2px solid red;
+  /* border: 2px solid red; */
+}
+
+#HeaderContainer {
+  /* background: lightgray; */
+}
+
+#HeaderContainer .navigation-area {
+}
+
+#ContentContainer {
+}
+
+#ContentContainer .content-area {
+}
+
+#FooterContainer {
+}
+
+#FooterContainer .footer-area {
+}
+
+.nav-link.active {
+  background: rgb(194, 194, 194);
+}
+
+.nav-link:hover {
+  background: rgb(194, 194, 194);
 }
