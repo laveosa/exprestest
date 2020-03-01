@@ -1,9 +1,11 @@
 <div class="content-area container">
-  <div class="file-folder-container row pt-3 pb-3">
-    <div
-      class="folder-block border col-2 p-2 d-flex justify-content-center align-items-center"
-    >
-      <h1>+</h1>
+  <div class="file-folder-container row pt-4 pb-4">
+    <% FFolder.elements.forEach(function(elem, idx){%>
+    <div class="elem-block col-2 mb-4">
+      <div class="elem border d-flex justify-content-center align-items-center">
+        <h1>+</h1>
+      </div>
     </div>
+    <%})%>
   </div>
 </div>

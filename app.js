@@ -14,6 +14,9 @@ let contentType = "text/html";
 let model = {
   nav: {
     url: null
+  },
+  FFolder: {
+    elements: []
   }
 };
 
@@ -36,6 +39,7 @@ http
       });
 
       model.nav.url = "/home";
+      model.FFolder.elements = [{},{},{}];
 
       ejs.renderFile("./app/server/views/home.ejs", model, (err, data) => {
         if (err) throw err;
