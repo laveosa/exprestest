@@ -1,12 +1,32 @@
 .main-wraper {
-  /* border: 2px solid red; */
 }
 
 #HeaderContainer {
-  /* background: lightgray; */
 }
 
 #HeaderContainer .navigation-area {
+}
+
+#HeaderContainer .navigation-area .logo-cover {
+}
+
+#HeaderContainer .navigation-area .logo-cover .logo {
+  width: 42px;
+  height: 42px;
+  margin-left: 0 !important;
+}
+
+#HeaderContainer .navigation-area .navigation-cover {
+}
+
+#HeaderContainer .navigation-area .user-cover {
+}
+
+#HeaderContainer .navigation-area .user-cover .user {
+  width: 42px;
+  height: 42px;
+  margin-right: 0 !important;
+  cursor: pointer;
 }
 
 #ContentContainer {
