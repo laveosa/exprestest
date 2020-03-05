@@ -16,6 +16,7 @@ let model = {
     url: null
   },
   FFolder: {
+    id: null,
     elements: []
   }
 };
@@ -39,7 +40,7 @@ http
       });
 
       model.nav.url = "/home";
-      model.FFolder.elements = [{},{},{}];
+      model.FFolder.elements = [{}, {}, {}];
 
       ejs.renderFile("./app/server/views/home.ejs", model, (err, data) => {
         if (err) throw err;
