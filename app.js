@@ -17,6 +17,7 @@ let model = {
   },
   FFolder: {
     id: null,
+    state: null,
     elements: []
   }
 };
